@@ -3,6 +3,8 @@ Simple ZoomAndPan on Canvas WPF
 
 A simple controler to use in WPF applications;
 
+![N|Solid](https://github.com/xaotix/ZoomAndPan/blob/main/example.png)
+
 `
 Compile. Reference the dll and use in your WPF.
 `
