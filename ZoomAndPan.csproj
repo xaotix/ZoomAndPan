@@ -49,6 +49,8 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -66,6 +68,10 @@
     <Compile Include="Helpers\AnimationHelper.cs" />
     <Compile Include="Helpers\DoubleHelpers.cs" />
     <Compile Include="RectangleObserableCollectionCanvas.cs" />
+    <Compile Include="View.cs" />
+    <Compile Include="Viewer\ViewCanvas.xaml.cs">
+      <DependentUpon>ViewCanvas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZoomAdjustConverter.cs" />
     <Compile Include="Viewer\ZoomAndPanScrollViewerView.xaml.cs">
       <DependentUpon>ZoomAndPanScrollViewerView.xaml</DependentUpon>
@@ -91,6 +97,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Viewer\ViewCanvas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

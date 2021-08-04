@@ -16,6 +16,14 @@ namespace ZoomAndPanSample
         {
             return this.prancha;
         }
+        public void Populate(List<UIElement> uIElements)
+        {
+            this.prancha.Children.Clear();
+            foreach(var obj in uIElements)
+            {
+                this.prancha.Children.Add(obj);
+            }
+        }
 
         public ZoomAndPanControlView()
         {

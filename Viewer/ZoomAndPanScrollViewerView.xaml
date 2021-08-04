@@ -122,7 +122,7 @@
             <!--
                 This is the content that is displayed.
             -->
-            <Canvas x:Name="prancha" Background="Black" Width="1500" Height="1500" Margin="75" >
+            <Canvas x:Name="prancha" Background="Black" Width="1500" Height="1500" Margin="0" >
                 <Canvas.LayoutTransform>
                     <ScaleTransform ScaleX="1" ScaleY="-1" CenterX=".5" CenterY=".5" />
                 </Canvas.LayoutTransform>

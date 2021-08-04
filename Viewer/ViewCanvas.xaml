@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZoomAndPan.Viewer.ViewCanvas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+               xmlns:zoom="clr-namespace:ZoomAndPanSample"
+             mc:Ignorable="d" 
+             Width="650"
+        WindowStartupLocation="CenterScreen"
+        
+        MinWidth="650"
+                Height="450">
+    <Grid>
+        <zoom:ZoomAndPanControlView x:Name="canvas"/>
+    </Grid>
+</Window>
