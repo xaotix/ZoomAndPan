@@ -14,6 +14,14 @@ namespace ZoomAndPan
             _partDragZoomCanvas = this.Template.FindName("PART_DragZoomCanvas", this) as Canvas;
         }
 
+        public void ZoomExtend()
+        {
+            SaveZoom();
+            AnimatedZoomTo(FitZoomValue);
+            RaiseCanExecuteChanged();
+        }
+
+
         /// <summary>
         /// The control for creating a zoom border
         /// </summary>

@@ -8,7 +8,10 @@ namespace ZoomAndPan
     public class ZoomAndPanScrollViewer : ScrollViewer
     {
         // private ZoomAndPanControl _zoomAndPanControl;
-
+        public void ZoomExtend()
+        {
+            ZoomAndPanContent.ZoomExtend();
+        }
         #region constructor and overrides
         /// <summary>
         /// Static constructor to define metadata for the control (and link it to the style in Generic.xaml).

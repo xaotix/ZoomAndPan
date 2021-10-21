@@ -117,38 +117,12 @@
                                            Background="Black"
                                            MinimumZoomType="FitScreen"
                                            UseAnimations="{Binding ElementName=AnimationsCheckBox, Path=IsChecked}"
-                                           ZoomAndPanInitialPosition="OneHundredPercentCentered"
-                                           >
-            <!--
-                This is the content that is displayed.
-            -->
+                                           ZoomAndPanInitialPosition="OneHundredPercentCentered">
             <Canvas x:Name="prancha" Background="Black" Width="1500" Height="1500" Margin="0" >
                 <Canvas.LayoutTransform>
                     <ScaleTransform ScaleX="1" ScaleY="-1" CenterX=".5" CenterY=".5" />
                 </Canvas.LayoutTransform>
             </Canvas>
         </zoomAndPan:ZoomAndPanScrollViewer>
-        <!--<StackPanel Grid.Row="2"
-                    Margin="10"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
-                    Orientation="Vertical">
-            <TextBlock FontWeight="Bold" Text="Mouse Position" />
-            <TextBlock Margin="10,0" Text="{Binding ElementName=ZoomAndPanControl, Path=MousePosition.X, StringFormat=X: {0:F0}}" />
-            <TextBlock Margin="10,0" Text="{Binding ElementName=ZoomAndPanControl, Path=MousePosition.Y, StringFormat=Y: {0:F0}}" />
-            <TextBlock Margin="5,5" Text="{Binding ElementName=actualContent, Path=SelectedColor, StringFormat=Color: {0}}" />
-        </StackPanel>
-        <CheckBox Name="AnimationsCheckBox"
-                  Grid.Row="2"
-                  HorizontalAlignment="Left"
-                  IsChecked="True"
-                  VerticalAlignment="Bottom"
-                  Content="Use Animations" />-->
-        <!--<zoomAndPan:ZoomAndPanViewBox Grid.Row="2"
-                                      Width="100"
-                                      Height="100"
-                                      Background="#AACCCCCC"
-                                      DataContext="{Binding ElementName=ZoomAndPanControl}"
-                                      Visual="{Binding ElementName=actualContent}" />-->
     </Grid>
 </UserControl>

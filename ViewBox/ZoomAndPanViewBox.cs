@@ -11,6 +11,10 @@ namespace ZoomAndPan
     /// </summary>
     public class ZoomAndPanViewBox : ContentControl
     {
+        public void ZoomExtend()
+        {
+            GetZoomAndPanControl().ZoomExtend();
+        }
         #region local fields
         /// <summary>
         /// The control for creating a drag border
